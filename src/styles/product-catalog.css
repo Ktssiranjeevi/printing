@@ -1,0 +1,15 @@
+.product-catalog {
+  display: flex;
+}
+
+.product-catalog__content {
+  flex: 1 1 0%;
+  padding: 2rem;
+}
+
+.product-catalog__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(55 65 81);
+}

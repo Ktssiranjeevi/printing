@@ -1,0 +1,139 @@
+.top-nav {
+  position: relative;
+  z-index: 50;
+  border-bottom: 1px solid rgba(255, 171, 3, 0.3);
+  background: #000;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.top-nav__inner {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 1rem;
+}
+
+.top-nav__row {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-nav__brand-group,
+.top-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-nav__back-button {
+  border-color: #ffab03;
+  background: transparent;
+  color: #ffab03;
+}
+
+.top-nav__back-button:hover {
+  background: #ffab03;
+  color: #000;
+}
+
+.top-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top-nav__logo {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: #ffab03;
+}
+
+.top-nav__logo-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.top-nav__brand-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffab03;
+}
+
+.top-nav__search-container {
+  display: none;
+  max-width: 28rem;
+  flex: 1 1 0%;
+  margin: 0 1rem;
+}
+
+.top-nav__search-wrap {
+  position: relative;
+}
+
+.top-nav__search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  height: 1rem;
+  width: 1rem;
+  transform: translateY(-50%);
+  color: rgba(255, 171, 3, 0.7);
+}
+
+.top-nav__search {
+  width: 100%;
+  border-color: rgba(255, 171, 3, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  padding-left: 2.5rem;
+  color: #fff;
+}
+
+.top-nav__search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.top-nav__action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.top-nav__action:hover {
+  background: #ffab03;
+  color: #000;
+}
+
+.top-nav__action-label {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .top-nav__inner {
+    padding: 0 1.5rem;
+  }
+
+  .top-nav__action-label {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-nav__search-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-nav__inner {
+    padding: 0 2rem;
+  }
+}

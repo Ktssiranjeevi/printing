@@ -1,0 +1,29 @@
+.app-shell {
+  min-height: 100vh;
+  background: rgb(241 245 249);
+  color: rgb(15 23 42);
+}
+
+.app-shell__main {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 2rem 1rem;
+}
+
+.app-shell__main--full-width {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+@media (min-width: 640px) {
+  .app-shell__main {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-shell__main {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,65 @@
+.profile-page__eyebrow {
+  display: inline-flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgb(219 234 254);
+}
+
+.profile-page__eyebrow-icon {
+  height: 2rem;
+  width: 2rem;
+  color: rgb(29 78 216);
+}
+
+.profile-page__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile-page__card {
+  border: 0;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.profile-page__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-page__icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(37 99 235);
+}
+
+.profile-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-page__value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: rgb(15 23 42);
+}
+
+.profile-page__text {
+  font-size: 0.875rem;
+  color: rgb(71 85 105);
+}
+
+.profile-page__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-page__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

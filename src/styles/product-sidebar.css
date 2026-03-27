@@ -1,0 +1,41 @@
+.product-sidebar {
+  min-height: 100vh;
+  width: 16rem;
+  background: rgb(249 250 251);
+  padding: 1.5rem;
+}
+
+.product-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-sidebar__title {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(17 24 39);
+}
+
+.product-sidebar__button {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  color: rgb(55 65 81);
+}
+
+.product-sidebar__button:hover {
+  background: rgb(243 244 246);
+  color: rgb(17 24 39);
+}
+
+.product-sidebar__button--active {
+  background: rgb(37 99 235);
+  color: #fff;
+}
+
+.product-sidebar__button--active:hover {
+  background: rgb(29 78 216);
+  color: #fff;
+}

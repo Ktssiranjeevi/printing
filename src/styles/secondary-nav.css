@@ -1,0 +1,121 @@
+.secondary-nav {
+  position: sticky;
+  top: 0;
+  z-index: 70;
+  border-bottom: 1px solid rgb(226 232 240);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.secondary-nav__inner {
+  position: relative;
+  z-index: 71;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 1rem;
+}
+
+.secondary-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.375rem 0;
+}
+
+.secondary-nav__tab-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.secondary-nav__tab {
+  position: relative;
+  z-index: 72;
+  border-bottom: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(51 65 85);
+  transition:
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.secondary-nav__tab:hover {
+  border-bottom-color: rgba(255, 171, 3, 0.7);
+  background: rgba(255, 171, 3, 0.09);
+  color: #ffab03;
+}
+
+.secondary-nav__tab--active {
+  border-bottom-color: #ffab03;
+  background: #ffab03;
+  color: #000;
+  box-shadow: 0 10px 24px rgba(255, 171, 3, 0.22);
+}
+
+.secondary-nav__tab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.45rem;
+}
+
+.secondary-nav__tab-label {
+  display: inline-block;
+  max-width: 13rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.secondary-nav__close {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.secondary-nav__close:hover {
+  color: rgb(239 68 68);
+}
+
+.secondary-nav__close-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.secondary-nav__session-pill {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 999px;
+  background: rgba(241, 245, 249, 0.9);
+  color: rgb(51 65 85);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.6rem 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .secondary-nav__inner {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .secondary-nav__inner {
+    padding: 0 2rem;
+  }
+}
